@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!-- DrawCircleView -->
+    <color name="draw_circle_view_progress">#9EB3E8</color>
+    <color name="draw_circle_view_success">#8FD3E8</color>
+    <color name="draw_circle_view_fail">#C595DF</color>
+    <color name="draw_circle_view_default">#F2F3F3</color>
+    <color name="detail_page_line_color">#8e8e8e</color>
 </resources>

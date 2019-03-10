@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         DrawCircleView drawCircleView = findViewById(R.id.drawCircleView);
 
-        drawCircleView.setmTxtHint("哈哈哈");
+        drawCircleView.setmTxtHint("312");
         drawCircleView.setmTxtNumber("213");
         drawCircleView.setProgress(0.4f, 0.3f, 0.3f);
     }

@@ -10,4 +10,11 @@
     <color name="draw_circle_view_fail">#C595DF</color>
     <color name="draw_circle_view_default">#F2F3F3</color>
     <color name="detail_page_line_color">#8e8e8e</color>
+
+    <!-- OtherDrawCircleView -->
+    <color name="update_dialog_sure_bg_start">#18d6d5</color>
+    <color name="update_dialog_sure_bg_end">#0999f5</color>
+    <color name="update_draw_circle_view_default">#e2e2e2</color>
+    <color name="update_draw_circle_view_progress">#0999f5</color>
+    <color name="update_draw_circle_view_text_color">#ffffff</color>
 </resources>

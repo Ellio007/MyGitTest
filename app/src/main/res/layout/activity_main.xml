@@ -17,9 +17,27 @@
     <com.tyh.gittest.drawcircleview.OtherDrawCircleView
         android:id="@+id/otherDrawCircleView"
         android:layout_width="164dp"
-        android:layout_marginTop="12dp"
         android:layout_height="164dp"
         android:layout_gravity="center"
+        android:layout_marginTop="12dp"
         app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/btnRotate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ViewPage旋转动画" />
+
+    <Button
+        android:id="@+id/btnScale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ViewPage缩放动画" />
+
+    <Button
+        android:id="@+id/btnWeChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="仿微信" />
 
 </LinearLayout>

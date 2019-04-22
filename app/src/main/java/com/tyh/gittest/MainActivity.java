@@ -1,11 +1,15 @@
 package com.tyh.gittest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.widget.Toast;
 
 import com.tyh.gittest.drawcircleview.DrawCircleView;
 import com.tyh.gittest.drawcircleview.OtherDrawCircleView;
+import com.tyh.gittest.viewpage.BannerActivity;
+import com.tyh.gittest.viewpage.SplashActivity;
+import com.tyh.gittest.viewpage.ViewPageTabActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,6 +32,20 @@ public class MainActivity extends AppCompatActivity {
         otherDrawCircleView = findViewById(R.id.otherDrawCircleView);
         myTimer = new MyTimer(100 * 1000, 1000);
         myTimer.start();
+
+        initBtnClickListener();
+    }
+
+    /**
+     * 点击事件
+     */
+    private void initBtnClickListener() {
+        findViewById(R.id.btnRotate).setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, BannerActivity.class)));
+        findViewById(R.id.btnScale).setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, SplashActivity.class)));
+        findViewById(R.id.btnWeChat).setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, ViewPageTabActivity.class)));
     }
 
     @Override

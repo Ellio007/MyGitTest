@@ -29,8 +29,6 @@ public class ScaleTransformer implements ViewPager.PageTransformer {
             page.setScaleX(MIN_SCALE);
             page.setScaleY(MIN_SCALE);
             page.setAlpha(MIN_ALPHA);
-            page.setTranslationX(MIN_SCALE);
-            page.setTranslationY(MIN_SCALE);
         } else if (position <= 1) {
             // 左边页面
             if (position < 0) {
@@ -59,15 +57,11 @@ public class ScaleTransformer implements ViewPager.PageTransformer {
                 // b->a
                 // b , position :(0,1)
                 // 1 ， 0.75f
-                page.setTranslationX(scaleB);
-                page.setTranslationY(scaleB);
             }
         } else {
             page.setScaleX(MIN_SCALE);
             page.setScaleY(MIN_SCALE);
             page.setAlpha(MIN_ALPHA);
-            page.setTranslationX(MIN_SCALE);
-            page.setTranslationY(MIN_SCALE);
         }
     }
 }

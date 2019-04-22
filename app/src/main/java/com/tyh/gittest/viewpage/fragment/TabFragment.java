@@ -46,7 +46,6 @@ public class TabFragment extends Fragment {
      * @param title title.
      * @return A new instance of fragment TabFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static TabFragment newInstance(String title) {
         TabFragment fragment = new TabFragment();
         Bundle args = new Bundle();

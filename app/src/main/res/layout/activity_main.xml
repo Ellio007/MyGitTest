@@ -40,4 +40,10 @@
         android:layout_height="wrap_content"
         android:text="仿微信" />
 
+    <Button
+        android:id="@+id/btnCustomBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义Banner" />
+
 </LinearLayout>

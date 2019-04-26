@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, SplashActivity.class)));
         findViewById(R.id.btnWeChat).setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, ViewPageTabActivity.class)));
+        findViewById(R.id.btnCustomBanner).setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, com.tyh.gittest.customeview.BannerActivity.class)));
     }
 
     @Override

@@ -20,6 +20,7 @@
         <activity android:name=".viewpage.ViewPageTabActivity" />
         <activity android:name=".viewpage.BannerActivity" />
         <activity android:name=".viewpage.SplashActivity" />
+        <activity android:name=".customeview.BannerActivity"/>
     </application>
 
 </manifest>

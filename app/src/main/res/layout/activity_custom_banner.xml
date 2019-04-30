@@ -4,11 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.tyh.gittest.customeview.ImageBannerView
+    <com.tyh.gittest.customeview.ImageBannerFrameLayout
         android:id="@+id/bannerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content" >
 
-    </com.tyh.gittest.customeview.ImageBannerView>
+    </com.tyh.gittest.customeview.ImageBannerFrameLayout>
 
 </LinearLayout>

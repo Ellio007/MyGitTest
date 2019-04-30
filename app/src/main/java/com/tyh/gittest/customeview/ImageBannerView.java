@@ -38,6 +38,16 @@ public class ImageBannerView extends ViewGroup {
 
     private TimerTask timerTask;
 
+    public interface ImageBannerViewListener {
+        void selectImage(int index);
+    }
+
+    private ImageBannerViewListener bannerViewListener;
+
+    public void setBannerViewListener(ImageBannerViewListener bannerViewListener) {
+        this.bannerViewListener = bannerViewListener;
+    }
+
     private Handler autoHandler = new Handler(new Handler.Callback() {
         @Override
         public boolean handleMessage(Message msg) {
@@ -62,6 +72,7 @@ public class ImageBannerView extends ViewGroup {
                     int dx = distance - startX;
                     scroller.startScroll(startX, 0, dx, 0);
                     invalidate();
+                    bannerViewListener.selectImage(index);
 //                    scrollTo(distance,0);
                     break;
                 default:
@@ -121,7 +132,7 @@ public class ImageBannerView extends ViewGroup {
                 }
             }
         };
-        timer.schedule(timerTask, 1000, 3000);
+        timer.schedule(timerTask, 3000, 3000);
 
     }
 
@@ -203,6 +214,7 @@ public class ImageBannerView extends ViewGroup {
                     invalidate();
                 }
                 startAuto();
+                bannerViewListener.selectImage(index);
 //                scrollTo(index * childrenWidth, 0);
                 break;
             default:
@@ -210,4 +222,6 @@ public class ImageBannerView extends ViewGroup {
         }
         return true;
     }
+
+
 }
